@@ -1,6 +1,6 @@
 flume-safe-rollingfilesink
 ==========================
-配置参数基本与sink中file_roll实现相同 只是增加了一个临时目录 在文件被完成之后移动到另外一个目录中 另外不会生成空文件
+基于org.apache.flume.sink.RollingFileSink修改的实现,配置参数基本与其相同 只是增加了一个临时目录 在文件被完成之后移动到另外一个目录中 另外不会生成空文件
 
 ```sh
 agent1.channels.ch1.type = memory
